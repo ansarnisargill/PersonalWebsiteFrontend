@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PersonalWebsite": {
+    "WebsiteUI": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,14 +13,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/PersonalWebsite",
+            "outputPath": "dist/WebsiteUI",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
+              "src/an.ico",
               "src/assets"
             ],
             "styles": [
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "PersonalWebsite:build"
+            "browserTarget": "WebsiteUI:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "PersonalWebsite:build:production"
+              "browserTarget": "WebsiteUI:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PersonalWebsite:build"
+            "browserTarget": "WebsiteUI:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "PersonalWebsite:serve"
+            "devServerTarget": "WebsiteUI:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "PersonalWebsite:serve:production"
+              "devServerTarget": "WebsiteUI:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "PersonalWebsite"
+  "defaultProject": "WebsiteUI"
 }
