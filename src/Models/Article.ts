@@ -1,7 +1,7 @@
 export class Post {
-    Id: string;
-    Title: string;
-    Content: string;
-    PublishedAt: Date;
-    Tag: string;
+    id: string;
+    title: string;
+    content: string;
+    publishedAt: Date;
+    tag: string;
 }

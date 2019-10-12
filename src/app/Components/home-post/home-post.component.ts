@@ -8,8 +8,9 @@ import { Post } from 'src/Models/Article';
 })
 export class HomePostComponent implements OnInit {
 
-  @Input() Posts: Post;
-  constructor() { }
+  @Input() Post: Post;
+  constructor() {
+   }
 
   ngOnInit() {
   }
