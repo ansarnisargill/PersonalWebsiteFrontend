@@ -9,6 +9,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { HomePostComponent } from './Components/home-post/home-post.component';
 import { AboutMeComponent } from './Components/about-me/about-me.component';
 import { PopularPostsComponent } from './Components/popular-posts/popular-posts.component';
+import { CVComponent } from './Pages/cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PopularPostsComponent } from './Components/popular-posts/popular-posts.
     HomeComponent,
     HomePostComponent,
     AboutMeComponent,
-    PopularPostsComponent
+    PopularPostsComponent,
+    CVComponent
   ],
   imports: [
     BrowserModule,
