@@ -10,6 +10,7 @@ import { HomePostComponent } from './Components/home-post/home-post.component';
 import { AboutMeComponent } from './Components/about-me/about-me.component';
 import { PopularPostsComponent } from './Components/popular-posts/popular-posts.component';
 import { CVComponent } from './Pages/cv/cv.component';
+import { PostComponent } from './Components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CVComponent } from './Pages/cv/cv.component';
     HomePostComponent,
     AboutMeComponent,
     PopularPostsComponent,
-    CVComponent
+    CVComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

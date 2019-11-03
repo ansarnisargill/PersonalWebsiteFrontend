@@ -10,12 +10,13 @@ export class HomeComponent implements OnInit {
 
   public Posts: Post[] = [];
   constructor() {
-    let post = new Post();
-    post.id = '234';
-    post.publishedAt = new Date();
-    post.title = 'this is test';
-    this.Posts.push(post);
-
+    for (let i = 1; i < 5; i++) {
+      let post = new Post();
+      post.id = '234';
+      post.publishedAt = new Date();
+      post.title = `this is test Post No ${i}`;
+      this.Posts.push(post);
+    }
   }
 
   ngOnInit() {
