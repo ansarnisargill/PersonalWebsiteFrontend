@@ -11,6 +11,7 @@ import { AboutMeComponent } from './Components/about-me/about-me.component';
 import { PopularPostsComponent } from './Components/popular-posts/popular-posts.component';
 import { CVComponent } from './Pages/cv/cv.component';
 import { PostComponent } from './Components/post/post.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostComponent } from './Components/post/post.component';
     AboutMeComponent,
     PopularPostsComponent,
     CVComponent,
-    PostComponent
+    PostComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
