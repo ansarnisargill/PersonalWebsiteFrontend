@@ -3,9 +3,9 @@
   <div class="w3-container w3-padding">
     <h4 style="font-weight: bold;">Tags</h4>
   </div>
-  <div class="w3-container">
+  <div class="w3-container" *ngFor="let tag of allTags">
     <p>
-      <span class="w3-tag w3-light-gray w3-hover-black w3-margin-bottom">Travel</span>
+      <span class="w3-tag w3-light-gray w3-hover-black w3-margin-bottom">{{tag}}</span>
     </p>
   </div>
 </div>

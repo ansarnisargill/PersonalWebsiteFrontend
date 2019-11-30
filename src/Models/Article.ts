@@ -4,4 +4,5 @@ export class Post {
     content: string;
     publishedAt: Date;
     tag: string;
+    intro: string;
 }

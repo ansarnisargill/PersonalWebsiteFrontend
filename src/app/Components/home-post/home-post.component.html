@@ -6,13 +6,13 @@
   </div>
 
   <div class="w3-container">
-    <div class=" TextFont" [innerHTML]="Post.content">.</div>
+    <div class=" TextFont" [innerHTML]="Post.intro">.</div>
     <div class="w3-row">
       <div class="w3-col m8 s12">
-        <p><a class="w3-button w3-padding-large w3-white w3-border" routerLink="/post" ><b>READ MORE &raquo;</b></a></p>
+        <p><a class="w3-button w3-padding-large w3-white w3-border" routerLink="/post/{{Post.id}}" ><b>READ MORE &raquo;</b></a></p>
       </div>
       <div class="w3-col m4 w3-hide-small">
-        <p><span class="w3-padding-large w3-right"><span class="w3-tag">Lab</span></span></p>
+        <p><span class="w3-padding-large w3-right"><span class="w3-tag">{{Post.tag}}</span></span></p>
       </div>
     </div>
   </div>

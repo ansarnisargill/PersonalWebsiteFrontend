@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostsService } from 'src/app/Services/posts.service';
 
 @Component({
   selector: 'tags',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tags.component.css']
 })
 export class TagsComponent implements OnInit {
-
-  constructor() { }
+public allTags:string[];
+  constructor(private postService:PostsService) {
+    this.allTags=postService.getAllTags();
+    console.log(this.allTags);
+    
+   }
 
   ngOnInit() {
   }

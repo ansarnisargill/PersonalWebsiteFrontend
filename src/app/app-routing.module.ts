@@ -6,10 +6,10 @@ import { PostComponent } from './Components/post/post.component';
 
 
 const routes: Routes = [
-  { path: '',      component: HomeComponent }, 
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'cv',      component: CVComponent },
-  { path: 'post',      component: PostComponent }
+  { path: 'cv', component: CVComponent },
+  { path: 'post/:postId', component: PostComponent }
 
 ];
 

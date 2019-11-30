@@ -4,7 +4,7 @@
   <!-- Blog entries -->
   <div class="w3-col l8 s12">
     <div *ngFor="let post of Posts">
-      <app-home-post [Post]="post"></app-home-post>
+      <home-post [Post]="post"></home-post>
     </div>
     <!-- END BLOG ENTRIES -->
   </div>
@@ -24,5 +24,5 @@
 <!-- Footer -->
 <div class="w3-container w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next &raquo;</button>
+  <button class="w3-button w3-black w3-padding-large w3-disabled w3-margin-bottom">Next &raquo;</button>
 </div>

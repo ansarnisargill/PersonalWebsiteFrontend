@@ -1,13 +1,15 @@
 <!-- Posts -->
 <div class="w3-card w3-margin  w3-white">
-  <div  class="w3-container w3-padding">
+  <div class="w3-container w3-padding">
     <h4 style="font-weight: bold;">Popular Posts</h4>
   </div>
   <ul class="w3-ul w3-hoverable">
-    <li class="w3-padding-16">
-      <span class="w3-large">Lorem</span><br>
-      <span>Sed mattis nunc</span>
-    </li>
+    <div *ngFor="let post of TopPosts">
+      <li class="w3-padding-16">
+        <span class="w3-large">{{post.title}}</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+    </div>
   </ul>
 </div>
 <hr>

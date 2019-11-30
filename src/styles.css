@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    font-size: x-large;
+}
 .FancyFont{
     font-family:'Dancing Script', cursive;
 }
 .HeadingFont{
     font-family:'PT Sans', cursive;
+    font-size: xx-large;
 }
 .TextFont{
     font-family:'PT Serif', cursive;
+    font-size: x-large;
 }
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
