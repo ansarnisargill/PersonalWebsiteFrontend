@@ -1,28 +1,25 @@
-<!-- Grid -->
-<div class="w3-row">
 
-  <!-- Blog entries -->
-  <div class="w3-col l8 s12">
-    <div *ngFor="let post of Posts">
-      <home-post [Post]="post"></home-post>
+  <div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+      <div *ngFor="let post of Posts">
+        <home-post [Post]="post"></home-post>
+      </div>
+      <!-- END BLOG ENTRIES -->
     </div>
-    <!-- END BLOG ENTRIES -->
+
+    <!-- Introduction menu -->
+    <div class="w3-col l4">
+      <about-me></about-me>
+      <tags></tags>
+      <!-- END Introduction Menu -->
+    </div>
+
+    <!-- END GRID -->
+  </div><br>
+
+  <div class="w3-container w3-padding-32 w3-margin-top">
+    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+    <button class="w3-button w3-black w3-padding-large w3-disabled w3-margin-bottom">Next &raquo;</button>
   </div>
-
-  <!-- Introduction menu -->
-  <div class="w3-col l4">
-    <about-me></about-me>
-    <tags></tags>
-    <!-- END Introduction Menu -->
-  </div>
-
-  <!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
-
-<!-- Footer -->
-<div class="w3-container w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-disabled w3-margin-bottom">Next &raquo;</button>
-</div>

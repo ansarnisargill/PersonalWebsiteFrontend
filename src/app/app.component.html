@@ -1,3 +1,7 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div [ngClass]="{'loader':isLoaderHidden}">
+</div>
+<div [ngClass]="{'w3-hide':isLoaderHidden}">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

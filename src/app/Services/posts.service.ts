@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Post } from 'src/Models/Article';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,9 @@ export class PostsService {
   public allPosts: Post[] = [];
   public url: string = 'https://puzzling-silence.glitch.me';
   constructor(private http: HttpClient) {
-    this.http.get<Post[]>(this.url).subscribe((posts) => { this.allPosts = posts; });
+  }
+  initializeData(): Observable<Post[]> {
+    return this.http.get<Post[]>(this.url);
   }
   getAllPosts(): Post[] {
     return this.allPosts;
