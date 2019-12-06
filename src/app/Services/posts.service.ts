@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Post } from 'src/Models/Article';
+import { Post } from 'src/Models/Post';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PostsService {
   public allPosts: Post[] = [];
-  public url: string = 'https://puzzling-silence.glitch.me';
+  public url = 'https://puzzling-silence.glitch.me';
   constructor(private http: HttpClient) {
   }
   initializeData(): Observable<Post[]> {
@@ -21,12 +21,18 @@ export class PostsService {
     return this.allPosts;
   }
   getAllTags(): string[] {
-    let allTags = this.allPosts.map((value) => {
+    const allTags = this.allPosts.map((value) => {
       return value.tag;
     });
     return allTags;
   }
   getPostById(id: string): Post {
-    return this.allPosts.find(value => value.id == id);
+    return this.allPosts.find(value => value.id === id);
+  }
+  getPostFromAPI(id: string): Observable<Post> {
+    return this.http.get<Post>(this.url);
+  }
+  addPostIntoListOfPosts(post:Post){
+    this.allPosts.
   }
 }

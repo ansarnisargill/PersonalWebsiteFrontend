@@ -1,7 +1,6 @@
-export class Post {
+export class PostMinimal {
     id: string;
     title: string;
-    content: string;
     publishedAt: Date;
     tag: string;
     intro: string;

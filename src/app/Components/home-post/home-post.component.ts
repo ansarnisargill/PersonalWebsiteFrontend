@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Post } from 'src/Models/Article';
+import { Post } from 'src/Models/Post';
 @Component({
   selector: 'home-post',
   templateUrl: './home-post.component.html',
