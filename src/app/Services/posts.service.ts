@@ -32,7 +32,14 @@ export class PostsService {
   getPostFromAPI(id: string): Observable<Post> {
     return this.http.get<Post>(this.url);
   }
-  addPostIntoListOfPosts(post:Post){
-    this.allPosts.
+  updatePostIntoListOfPosts(post: Post) {
+    let postToUpdate = this.allPosts.find(x => x.id == post.id);
+    if (postToUpdate) {
+      postToUpdate.content = post.content;
+
+    }
+    else {
+      this.allPosts.push(post);
+    }
   }
 }

@@ -1,5 +1,8 @@
-import { PostMinimal } from './PostMinimal';
-
-export class Post extends PostMinimal {
+export class Post {
+    id: string;
+    title: string;
+    publishedAt: Date;
+    tag: string;
+    intro: string;
     content: string;
 }

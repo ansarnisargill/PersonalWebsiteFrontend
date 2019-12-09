@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
 
   title = 'Ansar Nisar';
   isLoaderHidden = true;
+  isError = false;
 
   constructor(private postService: PostsService, private router: Router) {
 
@@ -18,10 +19,16 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
     this.postService.initializeData()
-      .subscribe(posts => {
-        this.postService.allPosts = posts;
-        this.isLoaderHidden = false;
-        this.router.navigate(['/home']);
-      });
+      .subscribe(
+        posts => {
+          this.postService.allPosts = posts;
+        },
+        error => {
+          this.isError = true;
+        },
+        ()=>{
+          this.isLoaderHidden = false;
+          this.router.navigate(['/home']);
+        });
   }
 }

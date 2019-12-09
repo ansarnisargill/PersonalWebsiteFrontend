@@ -9,19 +9,19 @@ import { Post } from 'src/Models/Post';
 })
 export class PostComponent implements OnInit {
   public post: Post;
-  public postId:string;
+  public postId: string;
   constructor(private route: ActivatedRoute, private postService: PostsService) {
 
   }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.postId=params.get('postId');
+      this.postId = params.get('postId');
       this.post = this.postService.getPostById(this.postId);
-      if(this.post===null){
-        this.postService.getPostFromAPI(this.postId).subscribe(post=>{ 
-          this.post==post;
-          this.postService
+      if (this.post === null) {
+        this.postService.getPostFromAPI(this.postId).subscribe(post => {
+          this.post == post;
+          this.postService.updatePostIntoListOfPosts(post);
         })
       }
     });
