@@ -1,15 +1,17 @@
 <div class="card">
   <div class="card-content">
-    <p class="title">
+    <p class="title is-light">
       {{Post.title}}
     </p>
-    <p class="subtitle">
+    <p class="subtitle is-light" >
       {{Post.publishedAt|date:"fullDate"|uppercase}}
     </p>
-    <div class=" TextFont" [innerHTML]="Post.intro">.</div>
     <div>
       <span class="tag is-info">{{Post.tag}}</span>
     </div>
+    <br>
+    <div class=" TextFont" [innerHTML]="Post.intro">.</div>
+
   </div>
   <footer class="card-footer">
     <p class="card-footer-item">
