@@ -33,12 +33,11 @@ export class PostsService {
     return this.http.get<Post>(this.url);
   }
   updatePostIntoListOfPosts(post: Post) {
-    let postToUpdate = this.allPosts.find(x => x.id == post.id);
+    const postToUpdate = this.allPosts.find(x => x.id === post.id);
     if (postToUpdate) {
       postToUpdate.content = post.content;
 
-    }
-    else {
+    } else {
       this.allPosts.push(post);
     }
   }

@@ -14,6 +14,7 @@ import { CVComponent } from './Pages/cv/cv.component';
 import { PostComponent } from './Components/post/post.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { PortfolioComponent } from './Pages/portfolio/portfolio.component';
+import { BlogComponent } from './Pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PortfolioComponent } from './Pages/portfolio/portfolio.component';
     CVComponent,
     PostComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

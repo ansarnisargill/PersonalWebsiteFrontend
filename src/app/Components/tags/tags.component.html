@@ -1,11 +1,3 @@
-<!-- Labels / tags -->
-<div class="w3-card w3-white w3-margin">
-  <div class="w3-container w3-padding">
-    <h4 style="font-weight: bold;">Tags</h4>
+  <div class="is-center is-centered" *ngFor="let tag of allTags">
+    <a class="button is-info is-rounded is-outlined is-light" style="margin: 3px;">{{tag}}</a>
   </div>
-  <div class="w3-container" *ngFor="let tag of allTags">
-    <p>
-      <span class="w3-tag w3-light-gray w3-hover-black w3-margin-bottom">{{tag}}</span>
-    </p>
-  </div>
-</div>

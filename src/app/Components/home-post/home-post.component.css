@@ -1,0 +1,8 @@
+.card {
+  background: #7F00FF;
+  box-shadow: none;
+
+  background: linear-gradient(to right, #7F00FF, #3f00fc) !important;
+  color: #fff;
+
+}

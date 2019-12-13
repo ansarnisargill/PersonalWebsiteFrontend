@@ -24,9 +24,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/aos.css",
+              "src/css/bulma.css",
+              "src/css/core.css",
+              "src/css/cryptofont.css",
+              "src/css/modal-video.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/aos.js",
+              "src/js/app.js",
+              "src/js/local.js",
+              "src/js/roadmap.js",
+              "src/js/timeline.js",
+              "src/js/timer.js"
+            ]
           },
           "configurations": {
             "production": {
