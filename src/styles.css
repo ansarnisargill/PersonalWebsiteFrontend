@@ -13,3 +13,6 @@ body{
 .TextFont{
     font-family:'PT Serif', cursive;
 }
+.white{
+    color: white !important;
+}

@@ -9,7 +9,7 @@ import { BlogComponent } from './Pages/blog/blog.component';
 
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: AppComponent, pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'cv', component: CVComponent },
   { path: 'post/:postId', component: PostComponent },
