@@ -10,25 +10,11 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
 
   title = 'Ansar Nisar';
-  isLoaderHidden = true;
-  isError = false;
-
   constructor(private postService: PostsService, private router: Router) {
 
 
   }
   ngOnInit() {
-    this.postService.initializeData()
-      .subscribe(
-        posts => {
-          this.postService.allPosts = posts;
-        },
-        error => {
-          this.isError = true;
-        },
-        ()=>{
-          this.isLoaderHidden = false;
-          this.router.navigate(['/home']);
-        });
+    this.router.navigate(['/home']);
   }
 }
