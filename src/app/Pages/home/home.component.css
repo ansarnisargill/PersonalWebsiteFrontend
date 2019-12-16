@@ -1,6 +1,15 @@
+.title{
+  font-family: 'Kaushan Script', sans-serif;
+  transform: rotate(-2deg);
+  font-size: 5rem;
+  color: whitesmoke;
+}
 .card {
     background: #1c004c;
     box-shadow: none;
     color: #fff;
   
+  }
+  h2{
+    transform: rotate(-2deg);
   }

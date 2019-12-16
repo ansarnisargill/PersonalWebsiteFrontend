@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-body{
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto|Inconsolata|Kaushan+Script");
 .FancyFont{
     font-family:'Dancing Script', cursive;
 }
