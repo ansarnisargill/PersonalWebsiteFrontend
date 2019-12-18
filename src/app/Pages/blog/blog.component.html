@@ -1,8 +1,15 @@
+<div class="notification is-danger" #error *ngIf="ConnectivityError">
+  <button class="delete" (click)="HideElement(error)"></button>
+  <strong>Could Not connect to backend service.</strong>
+</div>
+<div *ngIf="!HasDataLoaded">
+  <div class="col-sm-2 ">
+    <div class="sp sp-circle"></div>
+  </div>
+</div>
 
-            <div *ngFor="let post of Posts">
-                <home-post [Post]="post"></home-post>
-            </div>
-       
-    
-  
-    
+<div *ngIf="HasDataLoaded">
+  <div *ngFor="let post of Posts">
+    <home-post [Post]="post"></home-post>
+  </div>
+</div>

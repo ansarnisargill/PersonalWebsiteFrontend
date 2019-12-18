@@ -1,14 +1,61 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Inconsolata|Kaushan+Script");
-.FancyFont{
-    font-family:'Dancing Script', cursive;
+
+.FancyFont {
+  font-family: 'Dancing Script', cursive;
 }
-.HeadingFont{
-    font-family:'PT Sans', cursive;
-    font-size: x-large;
+
+.HeadingFont {
+  font-family: 'PT Sans', cursive;
+  font-size: x-large;
 }
-.TextFont{
-    font-family:'PT Serif', cursive;
+
+.TextFont {
+  font-family: 'PT Serif', cursive;
 }
-.white{
-    color: white !important;
+
+.white {
+  color: white !important;
+}
+
+.col-sm-2 {
+  padding: 10px;
+  border-radius: 4px;
+  height: 125px;
+  margin-bottom: 10px;
+}
+
+.sp {
+  width: 32px;
+  height: 32px;
+  clear: both;
+  margin: 20px auto;
+}
+
+/* Spinner Circle Rotation */
+.sp-circle {
+  border: 4px  #7F00FF solid;
+  border-top: 4px white solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear;
+}
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }

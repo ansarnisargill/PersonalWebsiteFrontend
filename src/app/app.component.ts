@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
 
   title = 'Ansar Nisar';
-  constructor(private postService: PostsService, private router: Router) {
+  constructor(private router: Router) {
 
 
   }

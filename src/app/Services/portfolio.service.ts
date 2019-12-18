@@ -16,7 +16,7 @@ export class PortfolioService {
       p.desktopSupport = true;
       p.mobileSupport = true;
       p.pictureUrl = 'https://bulmatemplates.github.io/bulma-templates/images/admin.png';
-      p.title = "Map Showing Direction";
+      p.title = 'Map Showing Direction';
       p.version = 'Leaflet, Javascript';
       this.projects.push(p);
     }
