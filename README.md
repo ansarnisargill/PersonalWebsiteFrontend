@@ -1,3 +1,4 @@
-# WebsiteUI
+# Personal website frontend using Angular
+## Rewriting it now in Svelte so this repo is archived.
 
-This project was generated using Angular CLI for `https://ansarnisargill.github.io` 
+This is still live at `https://ansarnisargill.web.app/` 
